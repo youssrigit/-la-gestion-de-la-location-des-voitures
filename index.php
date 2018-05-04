@@ -34,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <li><?php previous_posts_link( 'Suivant' ); ?></li>
             </ul>
         <?php   endif; ?> </div> <!-- /.blog-main -->
-<?php get_sidebar();?> </div> <!-- /.row -->
+
 <?php get_footer(); ?>
 </body>
 </html>
