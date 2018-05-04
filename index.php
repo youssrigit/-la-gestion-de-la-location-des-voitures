@@ -10,8 +10,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Catatan Si Boy a Bootstarp  Website Template | Home :: w3layouts</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
+<link href="<?php bloginfo('template_directory'); ?>/css/style.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
