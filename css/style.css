@@ -33,7 +33,7 @@ body a{
 }
 .header-bottom{
 	background:#141414;
-	margin-top:6em;
+	margin-top:10em;
 	padding:10px;
 }
 .search-box{
@@ -101,7 +101,7 @@ i.aeroplane{
 	float:left;
     vertical-align: middle;
 	position: absolute;
-	top: 5em;
+	top: 0em;
 	left: 3em;
 }
 .content{
