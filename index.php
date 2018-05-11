@@ -28,7 +28,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  <div class="col-sm-8 blog-main">
  <?php if ( have_posts() ) : while ( have_posts() ) :
 the_post(); get_template_part( 'content', get_post_format() );
-endwhile; endif; ?> </div> <!-- /.blog-main -->
+endwhile;
+?><nav>
+ <ul class="pager">
+<li><?php next_posts_link( 'Previous' ); ?></li>
+<li><?php previous_posts_link( 'Next' ); ?></li>
+ </ul>
+</nav>
+ <?php endif; ?> </div> <!-- /.blog-main -->
+
+
 
 <?php get_footer(); ?>
 

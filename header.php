@@ -10,13 +10,14 @@
                 <div class="container">
                     <div class="head-nav">
                         <span class="menu"> </span>
+
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="index.html">Categories</a></li>
+                                <li ><a href="index.html">Home</a></li>
+                                <li><a href="about.html"><?php wp_nav_menu( $args );?></a></li>
                                 <div class="clearfix"> </div>
                         </ul>
                 </div>
+             
                 <!-- script-for-nav -->
                     <script>
                         $( "span.menu" ).click(function() {
