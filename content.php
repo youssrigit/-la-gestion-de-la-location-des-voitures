@@ -13,8 +13,18 @@
 the_title(); ?></a></h2>
  <p class="blog-post-meta"><?php the_date(); ?> par <a
 href="#"><?php the_author(); ?></a></p>
- <?php the_excerpt(); ?>
+<?php if ( has_post_thumbnail() ) {?>
+12
+<div class="row">
+<div class="col-md-4"> <?php the_post_thumbnail('thumbnail'); ?>
+</div>
+<div class="col-md-6"> <?php the_excerpt(); ?> </div>
+</div>
+<?php } else { ?>
+<?php the_excerpt(); ?> <?php } ?>
 </div><!-- /.blog-post -->
+
+
 
 
 
@@ -25,9 +35,12 @@ href="#"><?php the_author(); ?></a></p>
 
 			<div class="col-md-1 travelling2">
 				<h3>2</h3>
-				<a href="#">comments</a>
+				<a href="<?php comments_link(); ?>"> <?php printf( _nx( 'One Comment',
+'%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ),
+number_format_i18n( get_comments_number() ) ); ?> </a>
 			</div>
 				<div class="clearfix"> </div>
+
 	</div>
 
 
@@ -43,34 +56,13 @@ wp_get_archives( 'type=monthly' ); ?> </ol>
 				<a class="more" href="single.html">Read More</a>
 			</div>
 			<div class="col-md-12 lequotes3 ">
-				<div class="lequotes1">
-					<img src="images/01.png" class="img-responsive" alt="" />
-				</div>
-				<div class="lequotes2">
-					<h3>Le Quotes</h3>
-				</div>
-					<div class="clearfix"> </div>
+				
+				
+					
 			</div>
-				<div class="billgates">
-				<div class="col-md-10 billgates1">
-					<h2>Quotes from Bill Gates</h2>
-					<h5>by <a href="#">Samidi ,</a> 27 July 2013 ,<a href="#">Quotes</a></h5>
-				</div>
-				<div class="col-md-1 billgates2">
-					<h3>6</h3>
-					<p><a href="#">comments</a></p>
-				</div>
-					<div class="clearfix"> </div>
-					<h4>“Lorem Ipsum dolor sit amet”</h4>
-					<h6>Bill Gates</h6>
-				</div>
+			
 	</div>	
-	<div class="loadmore">
-			<a class="more" href="single.html">Read More</a>
-	</div>
-	<div class="loadmore1">
-			<a class="load" href="#">load More</a>	
-	</div>
+	
 </div>	
 </div>
 <!-- content -->

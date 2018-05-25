@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Catatan Si Boy a Bootstarp  Website Template | Home :: w3layouts</title>
+<title><?php echo get_bloginfo( 'name' ); ?></title>
 <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
 <link href="<?php bloginfo('template_directory'); ?>/css/style.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -36,9 +36,6 @@ endwhile;
  </ul>
 </nav>
  <?php endif; ?> </div> <!-- /.blog-main -->
-
-
-
 <?php get_footer(); ?>
 
 </body>
